@@ -77,22 +77,22 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // LEDs
-#define PIN_LED_13           (13u)
+#define PIN_LED_7            (7u)
 #define PIN_LED_RXL          (25u)
 #define PIN_LED_TXL          (26u)
-#define PIN_LED              PIN_LED_13
+#define PIN_LED              PIN_LED_7
 #define PIN_LED2             PIN_LED_RXL
 #define PIN_LED3             PIN_LED_TXL
-#define LED_BUILTIN          PIN_LED_13
+#define LED_BUILTIN          PIN_LED_7
 
 /*
  * Analog pins
  */
-#define PIN_A0               (14ul)
-#define PIN_A1               (15ul)
-#define PIN_A2               (16ul)
-#define PIN_A3               (17ul)
-#define PIN_A4               (18ul)
+#define PIN_A0               (15ul)
+#define PIN_A1               (16ul)
+#define PIN_A2               (17ul)
+#define PIN_A3               (18ul)
+#define PIN_A4               (40ul)
 #define PIN_A5               (19ul)
 #define PIN_A6               (44ul)
 #define PIN_A7               (45ul)
@@ -111,7 +111,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define ADC_RESOLUTION		12
 
 // Other pins
-#define PIN_ATN              (38ul)
+#define PIN_ATN              (23ul)
 static const uint8_t ATN = PIN_ATN;
 
 /*
@@ -134,12 +134,12 @@ static const uint8_t ATN = PIN_ATN;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (22u)
-#define PIN_SPI_MOSI         (23u)
+#define PIN_SPI_MISO         (38u)
+#define PIN_SPI_MOSI         (22u)
 #define PIN_SPI_SCK          (24u)
 #define PERIPH_SPI           sercom4
-#define PAD_SPI_TX           SPI_PAD_2_SCK_3
-#define PAD_SPI_RX           SERCOM_RX_PAD_0
+#define PAD_SPI_TX           SPI_PAD_0_SCK_3
+#define PAD_SPI_RX           SERCOM_RX_PAD_1
 
 static const uint8_t SS	  = PIN_A2 ;	// SERCOM4 last PAD is present on A2 but HW SS isn't used. Set here only for reference.
 static const uint8_t MOSI = PIN_SPI_MOSI ;
