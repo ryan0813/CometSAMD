@@ -88,11 +88,12 @@ extern "C"
 /*
  * Analog pins
  */
-#define PIN_A0               (15ul)
-#define PIN_A1               (16ul)
-#define PIN_A2               (17ul)
-#define PIN_A3               (18ul)
-#define PIN_A4               (40ul)
+ 
+#define PIN_A0               (14ul)
+#define PIN_A1               (15ul)
+#define PIN_A2               (16ul)
+#define PIN_A3               (17ul)
+#define PIN_A4               (18ul)
 #define PIN_A5               (19ul)
 #define PIN_A6               (44ul)
 #define PIN_A7               (45ul)
@@ -111,7 +112,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 #define ADC_RESOLUTION		12
 
 // Other pins
-#define PIN_ATN              (23ul)
+#define PIN_ATN              (13ul)
 static const uint8_t ATN = PIN_ATN;
 
 /*
@@ -134,9 +135,9 @@ static const uint8_t ATN = PIN_ATN;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (38u)
-#define PIN_SPI_MOSI         (22u)
-#define PIN_SPI_SCK          (24u)
+#define PIN_SPI_MISO         (22ul)
+#define PIN_SPI_MOSI         (23ul)
+#define PIN_SPI_SCK          (24ul)
 #define PERIPH_SPI           sercom4
 #define PAD_SPI_TX           SPI_PAD_0_SCK_3
 #define PAD_SPI_RX           SERCOM_RX_PAD_1
