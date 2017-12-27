@@ -1,0 +1,51 @@
+{
+  "packages": [
+    {
+      "maintaner": "PHL-Microsat",
+      "websiteURL": "http://www.phl-microsat.xyz",
+      "platforms": [
+        {
+          "category": "PHL-Microsat",
+          "url": "https://github.com/ryan0813/CometSAMD/raw/master/packages/CometCore-Samd-0.1.tar.bz2",
+          "checksum": "f7d994d1d0a8042b3d8412e0b33cff19b728f3f8440b462ddd977d6512cc8ce1",
+          "version": "0.1",
+          "architecture": "samd",
+          "archiveFileName": "CometCore-Samd-0.1.tar.bz2",
+          "boards":[
+            {
+              "name": "PHL-Microsat Comet"
+            }
+          ],
+          "size": "5885578",
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "version": "4.8.3-2014q1",
+              "name": "arm-none-eabi-gcc"
+            },
+            {
+              "packager": "arduino",
+              "version": "1.6.1-arduino",
+              "name": "bossac"
+            },
+            {
+              "packager": "arduino",
+              "version": "0.9.0-arduino",
+              "name": "openocd"
+            },
+            {
+              "packager": "arduino",
+              "version": "4.0.0-atmel",
+              "name": "CMSIS"
+            }   
+          ],
+          "name": "PHL-Microsat Boards"
+        }
+      ],
+      "tools": [
+      ],
+      "email": "mbzabanal@gmail.com",
+      "name": "phl-microsat"
+    }
+  ]
+}
