@@ -45,27 +45,7 @@
             }   
           ],
           "name": "PHL-Microsat Boards"
-        },
-        {
-          "name": "MightyCore",
-          "architecture": "avr",
-          "version": "1.0.1",
-          "category": "Contributed",
-          "url": "https://MCUdude.github.io/MightyCore/MightyCore-1.0.1.tar.gz",
-          "archiveFileName": "MightyCore-1.0.1.tar.gz",
-          "checksum": "SHA-256:999905c879d35ad8036fad976e7cccc84b7b68e4d7f3ca11e1ead5b23b1c8409",
-          "size": "310170",
-          "boards": [
-            {"name": "ATmega1284/P"},
-            {"name": "ATmega644/P/PA/A"},
-            {"name": "ATmega324P/PA/A"},
-            {"name": "ATmega164P/PA/A"},
-            {"name": "ATmega32"},
-            {"name": "ATmega16"},
-            {"name": "ATmega8535"}
-          ],
-          "toolsDependencies": []
-        },
+        }
       ],
       "tools": [
       ]
