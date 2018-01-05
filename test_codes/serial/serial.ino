@@ -1,4 +1,4 @@
-/*#include <Arduino.h>           // required before wiring_private.h
+#include <Arduino.h>           // required before wiring_private.h
 #include "wiring_private.h"    // pinPeripheral() function
 
 Uart Serial2 (&sercom1, 2, 3, SERCOM_RX_PAD_1, UART_TX_PAD_2);
@@ -11,7 +11,7 @@ void SERCOM1_Handler() {
 void SERCOM2_Handler() {
   Serial3.IrqHandler();
 }
-*/
+
 
 void setup() {
 
@@ -26,7 +26,7 @@ void setup() {
 
   Serial.print("Serial OK");
 
-  /*
+  
   // Check Serial 1 (SERCOM 0)
   Serial1.begin(9600);
   while(!Serial1); Serial.println("Done Serial1 Init");
@@ -62,38 +62,7 @@ void setup() {
     if(Serial3.available()) Serial.print(Serial3.read());
   }
 
-  Serial.println("Serial3 OK");
-  */
-  
-  /*
-  // Check Digital Output
-  pinMode(0, OUTPUT);
-  pinMode(1, OUTPUT);
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-
-  for (int i = 0; i < 9; i++){
-    digitalWrite(i, HIGH);
-    delay(100);
-    digitalWrite(i, LOW);
-    delay(100);
-  }
-  */  
+  Serial.println("Serial3 OK"); 
 }
 
-void loop() {
-  // Check Analog Input
-  
-  Serial.print("A0 "); Serial.println(analogRead(A0)); delay(1000);
-  Serial.print("A1 "); Serial.println(analogRead(A1)); delay(1000);
-  Serial.print("A2 "); Serial.println(analogRead(A2)); delay(1000);
-  Serial.print("A3 "); Serial.println(analogRead(A3)); delay(1000);
-  Serial.print("A4 "); Serial.println(analogRead(A4)); delay(1000);
-  
-  
-}
+void loop() {}
