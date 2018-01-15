@@ -12,7 +12,7 @@
         {
           "category": "PHL-Microsat",
           "url": "https://github.com/ryan0813/CometSAMD/raw/master/packages/CometCore-Samd-0.1.tar.bz2",
-          "checksum": "SHA-256:af5ecbe0b0b1d4bbd12419cbaba842a66e76f50837f9d42821536ba4cd561789",
+          "checksum": "SHA-256:7ab6988f44e6ff33bdeace5d7ec5160e53147bbed0ac37b088f2a0d10b1ab792",
           "version": "0.1",
           "architecture": "samd",
           "archiveFileName": "CometCore-Samd-0.1.tar.bz2",
