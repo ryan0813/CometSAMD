@@ -21,7 +21,7 @@
               "name": "PHL-Microsat Comet"
             }
           ],
-          "size": "5885578",
+          "size": "5873916",
           "toolsDependencies": [
             {
               "packager": "arduino",
